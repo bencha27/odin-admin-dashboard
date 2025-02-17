@@ -142,12 +142,121 @@ h1 {
     "header-bottom";
 }
 
+.header button {
+  background-color: #ffffff;
+  border: none;
+}
+
 .header-top {
   grid-area: header-top;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 2.5rem;
+}
+
+.search {
+  flex: 2;
+}
+
+button {
+  padding: 0;
+}
+
+.header-top-icon {
+  font-size: 1.5rem;
+  vertical-align: -6px;
+}
+
+.search input {
+  background-color: #e2e8f0;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.25rem 0.75rem;
+  width: 90%;
+  margin: 0 1rem;
+}
+
+.search input:focus, 
+.search input:active {
+  outline: 2px solid #1992d4;
+}
+
+.header-links {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.current-user.avatar-small {
+  width: 40px;
+  height: 40px;
+  background-color: #facc15;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar-small img {
+  width: 30px;
+  height: 30px;
+}
+
+.header-top h2 {
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .header-bottom {
   grid-area: header-bottom;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 2.5rem;
+}
+
+.header-bottom-left {
+  flex: 3;
+  display: flex;
+}
+
+.current-user.avatar-large {
+  width: 60px;
+  height: 60px;
+  background-color: #facc15;
+  border-radius: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar-large img {
+  width: 46px;
+  height: 46px;
+}
+
+.greeting {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  width: 80%;
+  padding: 0 1rem;
+}
+
+.greeting p {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.greeting h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.header-bottom-right {
+  flex: 2;
 }
 
 
