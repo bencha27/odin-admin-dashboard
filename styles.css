@@ -184,7 +184,7 @@ button {
 .header-links {
   flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   gap: 1.5rem;
 }
@@ -257,6 +257,19 @@ button {
 
 .header-bottom-right {
   flex: 2;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+}
+
+.header-bottom-right button {
+  background-color: #1992d4;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem;
+  width: 96px;
+  border-radius: 1rem;
 }
 
 
