@@ -77,7 +77,7 @@ body {
 .container {
   height: 100vh;
   display: grid;
-  grid-template-columns: 270px 1fr;
+  grid-template-columns: 240px 1fr;
   grid-template-rows: 160px 1fr;
   grid-template-areas: 
     "sidebar header"
@@ -101,19 +101,14 @@ body {
   padding: 1rem;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-}
-
 #dashboard-icon {
   font-variation-settings: "FILL" 1;
   font-size: 40px;
+  vertical-align: -12px;
 }
 
 h1 {
   font-size: 1.5rem;
-  padding: 0 0.5rem;
 }
 
 .sidebar ul {
@@ -124,6 +119,12 @@ h1 {
 .sidebar li {
   font-size: 1.25rem;
   font-weight: bold;
+}
+
+.sidebar-icon {
+  font-variation-settings: "FILL" 1;
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+  vertical-align: -4px;
 }
 
 
