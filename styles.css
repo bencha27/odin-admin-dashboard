@@ -188,17 +188,20 @@ h1 {
   gap: 1.5rem;
 }
 
-.current-user.avatar-small {
+.avatar-small {
   width: 40px;
   height: 40px;
-  background-color: #facc15;
   border-radius: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.avatar-small img {
+.current-user.avatar-small {
+  background-color: #facc15;
+}
+
+.current-user.avatar-small img {
   width: 30px;
   height: 30px;
 }
@@ -281,17 +284,13 @@ h1 {
   grid-area: main;
   display: grid;
   grid-template-columns: 1fr 270px;
-  padding: 1.5rem 1rem;
+  column-gap: 1.5rem;
+  padding: 1.5rem;
 }
 
 .main h2 {
   font-size: 1.25rem;
   font-weight: 500;
-  margin-bottom: 0.75rem;
-}
-
-.projects-section {
-  padding-right: 1rem;
 }
 
 .projects-container {
@@ -301,6 +300,7 @@ h1 {
   grid-auto-rows: 196px;
   column-gap: 1.5rem;
   row-gap: 1.5rem;
+  margin: 0.75rem 0;
 }
 
 .project-card {
@@ -333,4 +333,78 @@ h1 {
 
 .project-icon {
   font-variation-settings: "wght" 100;
+}
+
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.announcements-container {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: #ccd1d8 4px 4px 4px;
+  padding: 1rem;
+  margin: 0.75rem 0;
+}
+
+.announcement-card {
+  margin: 0 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.announcement-card:last-of-type {
+  border-bottom: none;
+}
+
+.announcement-card h3 {
+  font-size: 14px;
+  font-weight: 500;
+  padding-bottom: 2px;
+}
+
+.announcement-card p {
+  font-size: 0.75rem;
+  color: #636363;
+}
+
+
+.trending-container {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: #ccd1d8 4px 4px 4px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0.75rem 0;
+}
+
+.trending-card {
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem;
+  align-items: center;
+}
+
+.trending-card-handle {
+  font-size: 14px;
+}
+
+.trending-card-name {
+  font-size: 14px;
+  color: #636363;
+}
+
+.avatar-small {
+  width: 40px;
+  height: 40px;
+}
+
+.attribution {
+  text-decoration: none;
+  font-size: 0.75rem;
 }
