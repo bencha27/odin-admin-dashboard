@@ -70,9 +70,10 @@ ol[role='list'] {
 
 
 .container {
+  height: 100vh;
   display: grid;
-  grid-template-columns: 280px 1fr;
-  grid-template-rows: 200px 1fr;
+  grid-template-columns: 270px 1fr;
+  grid-template-rows: 160px 1fr;
   grid-template-areas: 
     "sidebar header"
     "sidebar main";
@@ -80,15 +81,36 @@ ol[role='list'] {
 
 
 .sidebar {
+  background-color: #1992d4;
+  color: #fcfdfe;
   grid-area: sidebar;
 }
 
 
 .header {
+  background-color: #ffffff;
+  color: #000000;
   grid-area: header;
+  display: grid;
+  grid-template-rows: 64px 96px;
+  grid-template-areas: 
+    "header-top"
+    "header-bottom";
+}
+
+.header-top {
+  grid-area: header-top;
+}
+
+.header-bottom {
+  grid-area: header-bottom;
 }
 
 
 .main {
+  background-color: #e2e8f0;
+  color: #000000;
   grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 270px;
 }
